@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <button onclick="multiply(7)">Click here</button>
+        <p id="hi"></p>
+        <script>
+            function multiply(a,b)
+            {
+                if(b== undefined)
+                {
+                    alert("B is undefined")
+                    b=8
+                };
+                var result = a*b
+                document.getElementById("hi").innerHTML= result;
+            };
+            
+        </script>
+    </body>
+</html>
