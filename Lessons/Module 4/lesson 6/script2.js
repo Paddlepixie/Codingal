@@ -5,8 +5,6 @@ form.addEventListener('submit', function(event) {
 event.preventDefault(); // prevent default form submission behavior
 
 // validate username and password
-function submit()
-{
 
 const username = document.getElementById('username').value;
 
