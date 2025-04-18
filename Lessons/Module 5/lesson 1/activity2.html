@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Title
+        </title>
+    </head>
+    <body>
+        <P id="time"></P>
+        <p id="hello"></p>
+        <button onclick="greeting()">Click</button>
+        <script>
+            function greeting()
+            {
+            var hour = new Date().getHours();
+            var greet;
+            
+                document.getElementById("time").innerHTML="The time is " + hour + " hours"
+            if (hour < 12)
+            {
+                greet = "Good morning"
+                document.getElementById("hello").innerHTML=greet
+            }
+            else if ( hour < 17 && hour > 12)
+            {
+                greet = "Good afternoon"
+                document.getElementById("hello").innerHTML=greet
+            }
+            else
+            {
+                greet = "Good evening"
+                document.getElementById("hello").innerHTML=greet
+            }
+            }
+        </script>
+    </body>
+</html>
