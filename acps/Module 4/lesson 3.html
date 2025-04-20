@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Random Numbers & Date</title>
+</head>
+<body>
+    <p id="randomNumbers"></p>
+    <p id="currentDate"></p>
+    <p id="roundedNumber"></p>
+
+    <script>
+        // Generate a set of random numbers
+        let numbers = "";
+        for (let i = 0; i < 5; i++) {
+            numbers += Math.floor(Math.random() * 100) + " ";
+        }
+        document.getElementById("randomNumbers").textContent = "Random Numbers: " + numbers;
+
+        // Display current date
+        let date = new Date().toDateString();
+        document.getElementById("currentDate").textContent = "Current Date: " + date;
+
+        // Generate a rounded random number
+        let rounded = Math.round(Math.random() * 100);
+        document.getElementById("roundedNumber").textContent = "Rounded Random Number: " + rounded;
+    </script>
+</body>
+</html>
