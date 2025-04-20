@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Object & Array Demo</title>
+</head>
+<body>
+    <p id="objectOutput"></p>
+    <p id="arrayOutput"></p>
+    <p id="modifiedArray"></p>
+
+    <script>
+        // Object creation with updated age
+        let person = { name: "Srijan", age: 13, city: "Patna" };
+
+        // Array creation
+        let colors = ["Red", "Green", "Blue", "Yellow"];
+
+        // Printing object values with keys
+        document.getElementById("objectOutput").textContent = 
+            `Name: ${person.name}, Age: ${person.age}, City: ${person.city}`;
+
+        // Printing array values using indexes
+        document.getElementById("arrayOutput").textContent = 
+            `First Color: ${colors[0]}, Second Color: ${colors[1]}`;
+
+        // Performing array operations
+        colors.push("Purple"); 
+        colors.pop(); 
+        colors.shift(); 
+        let joinedColors = colors.join(", "); 
+
+        // Display modified array
+        document.getElementById("modifiedArray").textContent = 
+            `Modified Array: ${joinedColors}`;
+    </script>
+</body>
+</html>
