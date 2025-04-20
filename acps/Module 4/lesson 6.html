@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Object & Array Demo</title>
+</head>
+<body>
+    <p id="objectOutput"></p>
+    <p id="arrayOutput"></p>
+
+    <script>
+        let person = { name: "Srijan", age: 13, city: "Patna" };
+        let colors = ["Red", "Green", "Blue", "Yellow"];
+
+        document.getElementById("objectOutput").textContent = 
+            `Name: ${person.name}, Age: ${person.age}, City: ${person.city}`;
+
+        document.getElementById("arrayOutput").textContent = colors.join(", ");
+
+        colors.pop();
+        console.log("After pop(): " + colors.join(", "));
+    </script>
+</body>
+</html>
