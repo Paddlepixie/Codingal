@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Random Numbers</title>
+</head>
+<body>
+    <button onclick="generateNumbers()">Generate</button>
+    <p id="numbers"></p>
+
+    <script>
+        function generateNumbers() {
+            let numbers = "";
+            let i = 0;
+            while (i < 5) {
+                numbers += Math.floor(Math.random() * 100) + " ";
+                i++;
+            }
+            document.getElementById("numbers").textContent = numbers;
+        }
+    </script>
+</body>
+</html>
