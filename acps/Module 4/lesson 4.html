@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sum & Trigonometry</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        function sum(...nums) {
+            return nums.reduce((a, b) => a + b, 0);
+        }
+
+        function trig(deg) {
+            let rad = deg * (Math.PI / 180);
+            return `Sin: ${Math.sin(rad).toFixed(4)}, Cos: ${Math.cos(rad).toFixed(4)}, Tan: ${Math.tan(rad).toFixed(4)}`;
+        }
+
+        document.getElementById("output").textContent = `Sum: ${sum(10, 20, 30, 40)} | 45° Sin: ${trig(45)}`;
+    </script>
+</body>
+</html>
