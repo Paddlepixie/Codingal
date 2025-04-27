@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Adding evaluation
+        </title>
+    </head>
+    <body>
+        <button onclick="res()">Click</button>
+        <p id="result"></p>
+        <script>
+            function res(){
+                x=10
+                y=20
+                a= eval("x+y") + "<br>"
+                b= eval("2*2") + "<br>"
+                c= eval("y-x") + "<br>"
+                var hi = a+b+c
+                document.getElementById("result").innerHTML=hi
+            }
+        </script>
+    </body>
+</html>
