@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Adding mapping arrays
+        </title>
+    </head>
+    <body>
+        <h1>Mapping arrays</h1>
+        <p id="result"></p>
+        <script>
+            var numbers= [12,18,88,72]
+            function product(a){
+                return a*10
+            }
+            var newarray= numbers.map(product)
+            document.getElementById("result").innerHTML=newarray
+        </script>
+    </body>
+</html>
