@@ -1,0 +1,20 @@
+
+<html>
+<head>
+    <title>Error Handling</title>
+</head>
+<body>
+    <p id="output">Click to trigger an error.</p>
+    <button onclick="generateError()">Trigger Error</button>
+
+    <script>
+        function generateError() {
+            try {
+                let result = undefinedVariable;
+            } catch (error) {
+                document.getElementById("output").textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
