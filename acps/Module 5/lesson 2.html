@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Async JSON</title>
+</head>
+<body>
+    <p id="output">Fetching data...</p>
+
+    <script>
+        async function fetchData() {
+            return JSON.stringify({ status: "Success", message: "Data retrieved!" });
+        }
+
+        async function processData() {
+            let data = JSON.parse(await fetchData());
+            document.getElementById("output").textContent = `${data.status}: ${data.message}`;
+        }
+
+        processData();
+    </script>
+</body>
+</html>
