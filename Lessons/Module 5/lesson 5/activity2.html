@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Hi
+        </title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+            function displayer(value){
+                document.getElementById("result").innerHTML=value
+            }
+            function calculator(a,b,callback){
+                let sum = a + b
+                callback(sum)
+            }
+            calculator(8,8,displayer)
+        </script>
+    </body>
+</html>
