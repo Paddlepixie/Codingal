@@ -5,19 +5,20 @@
         </title>
     </head>
     <body>
+        <p id="hi"></p>
+        <input id="id1" type="number" max="300" min="100" required>
+        <button onclick="myfunction()">Ok</button>
         <script>
-            function validate()
-            {
-                var x = document.forms["myform"]["fname"].value
-                if (x == "") {
-                    alert("Name must be filled out")
-                    return false
+            function myfunction(){
+                var x = document.getElementById("id1").value
+                var inpobj=document.getElementById("id1")
+                if (!inpobj.checkValidity()){
+                    document.getElementById("hi").innerHTML=inpobj.validationMessage
+                }
+                else {
+                    document.getElementById("hi").innerHTML="Input is valid"
                 }
             }
         </script>
-        <form name="myform" onsubmit="validate()">
-            Name : <input name="fname" type="text">
-            <input type="submit" value="submit">
-        </form>
     </body>
 </html>
