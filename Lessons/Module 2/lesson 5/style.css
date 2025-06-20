@@ -1,9 +1,39 @@
-p{
-    background-color: red;
+html {
+
+scroll-behavior: smooth;
+
 }
-input [type = "text" ] {
-    border : 2px solid blue;
+
+body {
+
+background: #252525;
+
+font-family: "Baloo Tamma 2", cursive;
+
 }
-input [ type = "password" ] {
-    border : 2px solid green;
+
+/* Main Heading Font */
+
+.m-heading {
+
+font-family: "Roboto Slab", serif;
+
+}
+
+/* Navigation */
+
+.navigation-link {
+
+border: 2px solid transparent;
+
+}
+
+.navigation-link:hover {
+
+text-decoration: none;
+
+border-bottom: 2px solid #f5ba09;
+
+transition: 0.5s ease;
+
 }
