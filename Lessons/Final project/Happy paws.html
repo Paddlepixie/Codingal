@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Paws Pet Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #2e8b57;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+    .carousel img {
+      width: 100%;
+      display: none;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px;
+      gap: 20px;
+    }
+    .card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+      margin-top: 40px;
+    }
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #2e8b57;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div><strong>Happy Paws</strong></div>
+    <div>
+      <a href="Happy paws.html">Home</a>
+      <a href="Pets.html">Pets</a>
+      <a href="Acessories.html">Accessories</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <img src="wide bunny.png" class="active" alt="Bunny">
+    <img src="Wide puppy.png" alt="Puppy">
+    <img src="Wide accessories.png" alt="Accessories">
+  </div>
+
+  <!-- Cards Section -->
+   <div class="m-heading pt-15 align-center"  >
+    <h1>Shop more:</h1>
+   </div>
+  <div class="cards">
+    <div class="card">
+      <img src="Kitten.png" alt="Kitten">
+      <div class="card-body">
+        <h3>Adorable Kittens</h3>
+        <p>Fluffy companions ready to brighten your day.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Puppy.png" alt="Puppy">
+      <div class="card-body">
+        <h3>Playful Puppies</h3>
+        <p>Find your new best friend among our pups.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Accessories.png" alt="Accessories">
+      <div class="card-body">
+        <h3>Pet Accessories</h3>
+        <p>From collars to grooming kits—we’ve got it all.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with us:</p>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </footer>
+
+  <script>
+    const carouselImages = document.querySelectorAll(".carousel img");
+    let currentIndex = 0;
+
+    function showNextImage() {
+      carouselImages[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % carouselImages.length;
+      carouselImages[currentIndex].classList.add("active");
+    }
+
+    setInterval(showNextImage, 3000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Accessories - Happy Paws</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .accessory-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 30px;
+    }
+    .accessory-card {
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      background-color: white;
+      transition: transform 0.3s;
+    }
+    .accessory-card:hover {
+      transform: scale(1.03);
+    }
+    .accessory-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-info {
+      padding: 15px;
+    }
+    .card-info h4 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .card-info p {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header style="position: relative;">
+  <h1>Pet Accessories</h1>
+    <p>Everything your furry friend needs</p>
+  <a href="Happy paws.html" style="
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: white;
+    color: #2e8b57;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  ">Home</a>
+  </header>
+  <div class="accessory-grid">
+    <div class="accessory-card">
+      <img src="Leash.png" alt="Leash">
+      <div class="card-info">
+        <h4>Colorful Leashes</h4>
+        <p>Durable and comfy for daily walks.</p>
+      </div>
+    </div>
+    <div class="accessory-card">
+      <img src="Chew toy set.png" alt="Toys">
+      <div class="card-info">
+        <h4>Chew Toy Set</h4>
+        <p>Fun shapes that dogs love to gnaw on!</p>
+      </div>
+    </div>
+    <div class="accessory-card">
+      <img src="Grooming kit.png" alt="Grooming">
+      <div class="card-info">
+        <h4>Grooming Kit</h4>
+        <p>Brushes, combs, and clippers—salon ready.</p>
+      </div>
+    </div>
+    <div class="accessory-card">
+      <img src="Feeding Bowls.png" alt="Feeding Bowl">
+      <div class="card-info">
+        <h4>Stainless Bowls</h4>
+        <p>Easy to clean and great for messy eaters.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

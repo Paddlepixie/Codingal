@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Happy Paws</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .info, form {
+      margin-bottom: 25px;
+    }
+    .info h3 {
+      margin-bottom: 10px;
+    }
+    .info p {
+      margin: 4px 0;
+      color: #555;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #256f49;
+    }
+  </style>
+</head>
+<body>
+  <header style="position: relative;">
+  <h1>Contact Happy Paws</h1>
+  <p>We'd love to hear from you!</p>
+  <a href="Happy paws.html" style="
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: white;
+    color: #2e8b57;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  ">Home</a>
+  </header>
+  <div class="contact-container">
+    <div class="info">
+      <h3>Visit or Call Us</h3>
+      <p><strong>Address:</strong> 123 Paw Street, Petville, India</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> support@happypaws.in</p>
+    </div>
+
+    <form>
+      <h3>Send Us a Message</h3>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="What would you like to tell us?" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
