@@ -9,3 +9,11 @@ elif mood=="bad" :
     print("Oh no")
 else: 
     print("Please enter a valid string")
+sport = input("do you like sports?")
+sport = sport.lower()
+if sport=="yes" :
+    print("Cool")
+elif sport=="no" : 
+    print("Oh no")
+else: 
+    print("Please enter a valid string")
